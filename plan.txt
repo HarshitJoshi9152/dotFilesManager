@@ -1,0 +1,25 @@
+
+USAGE
+
+mark new .dotFilePath
+mark update .dotFilePath
+mark remove .dotFilePath
+
+mark backup | commit --all
+	|tscoding like git
+	|commiting terminal 
+	|interactive view
+
+working/features
+
+make a json file to store all files name and location.
+
+verifying changes and updating when changes are made
+	how to detect change without running a server ?
+		cron ? checking last changed ? server ?
+
+cloud storage backend
+	git lab
+	github
+	dropbox
+	google drive
