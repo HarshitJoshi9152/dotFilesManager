@@ -1,17 +1,33 @@
-import { SSL_OP_NO_SSLv2 } from "constants";
+import prompt from "prompt";
 
-console.log("Hello wolrd");
+import { add } from "./add";
+console.log(add);
+const argv = process.argv.slice(2);
 
-function say(name: string) {
-	console.log(name);
-	for (const i in name as any) {
-		console.log(i);
+/*
+file structure
+
+utility file for command functions.
+diff files for diff commands
+*/
+
+const commandsList = {
+	add: (argv: Array<any>) => {
+		// add.main(argv);
+		console.log("lol");
 	}
-}
+};
 
-function add({ n1, n2 }: { n1: number; n2: number }) {
-	return n1 + n2;
-}
+(async function main() {
+	const command = argv.shift();
+	// @ts-ignore
+	if (command) commandsList[command](argv);
+	else console.log("nani!"); // did you mean {}?
 
-add({ n1: 22, n2: 22 });
-say("Anmol!");
+	// prompt.start();
+	// const { name, school } = await prompt.get(["name", "school"]);
+	// console.log({ name, school });
+	process.exit();
+})();
+
+// prompt too heavy lol

@@ -1,16 +1,22 @@
 
 USAGE
 
-mark new .dotFilePath
+mark add/new .dotFilePath
 mark update .dotFilePath
 mark remove .dotFilePath
+mark configure
 
 mark backup | commit --all
 	|tscoding like git
 	|commiting terminal 
 	|interactive view
 
-working/features
+**working/features**
+
+add a config file to allow changing functionality
+
+	active commiting builds repo first then commits 
+	optimised commiting keeps built repo in storage...hmm double storage
 
 make a json file to store all files name and location.
 
@@ -23,3 +29,9 @@ cloud storage backend
 	github
 	dropbox
 	google drive
+
+
+USABLE repos
+
+https://www.npmjs.com/package/figlet
+
